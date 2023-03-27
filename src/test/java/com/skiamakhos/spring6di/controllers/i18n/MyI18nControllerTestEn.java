@@ -2,11 +2,10 @@ package com.skiamakhos.spring6di.controllers.i18n;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 
-@ActiveProfiles("EN")
+@ActiveProfiles("ES")
 @SpringBootTest
 class MyI18nControllerTestEn {
 
@@ -15,6 +14,6 @@ class MyI18nControllerTestEn {
 
     @Test
     void sayHello() {
-        myI18nController.sayHello();
+        System.out.println(myI18nController.sayHello());
     }
 }
